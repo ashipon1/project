@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4MDE9EQ3E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4MDE9EQ3E');
+</script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mocha Madness</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/b2w.png"/>
+    <link rel="stylesheet" href="styles/b2w.index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Main column */
+      .main {
+        flex: 90%; /* Set the width of the main content */
+        background-color: rgb(155, 216, 216); /* Grey background color */
+        padding: 20px; /* Some padding */
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+
+      body {
+        background: url(images/examples.png) center fixed repeat;
+      }
+
+      
+      #header1 {
+        background-color: rgb(155, 216, 216);
+      }
+      * {
+        list-style: none;
+      }
+
+      #title {
+        color: rgb(155, 216, 216);
+        background-color: salmon;
+        font-weight: 700;
+        font-size: 50px;
+        margin: 10px auto;
+        text-align: center;
+      }
+
+      /* Beg of content style */
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+
+      li {
+        color: salmon;
+        font-size: 50px;
+       
+      }
+
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: salmon;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 90%;
+        font-size: 25px;
+      }
+
+      .card button:hover {
+        opacity: 0.7;
+      }
+
+      h2{
+          text-align: center;
+          background-color: black;
+          color: rgb(155, 216, 216);
+          font-size: 45px;
+      }
+
+      p {
+font-size: 28px;
+
+      }
+
+      .adjusted-price {
+        color: black;
+        font-weight: 1000;
+        font-size: 40px;}
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <div id="logo1">
+          <a href="index.html"
+            ><img src="images/b2w.png" alt="image of B2W logo" height="120" />
+          </a>
+        </div>
+
+        <a href="howtobuy.html">HOW TO BUY</a>
+        <a href="mission.html">MISSION</a>
+        <a href="dummy-page.html">SUPPLIERS</a>
+        <a href="dummy-page.html">NEWS</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">PRODUCTS</button>
+          <div class="dropdown-content">
+            <div class="overview"><a href="ourproducts.html">Overview</a></div>
+            <a href="peanutpower.html">Peanut Power</a>
+            <a href="#">Mocha Madness</a>
+             <a href="cococrazy.html">Crazy Coconut</a>
+             <a href="birthdaybliss.html">Birthday Bliss</a>
+             <a href="amazingapple.html">Amazing Apple</a>
+             <a href="outstandingorange.html">Outstanding Orange</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Header -->
+    <h1><span id="header1"> </span></h1>
+
+    <div class="promo">
+      <div class="main">
+        <div id="title">Protein Ball Flavor</div>
+        <h2 >Mocha Madness</h2>
+
+        <div class="card">
+          <img
+            src="images/mochamadness.png"
+            alt="Mocha Madness"
+            title="Mocha Madness"
+            width= "60%"
+          />
+          <h1>Price</h1>
+          <p class="price">
+            <ul>
+                <li>$6 / 6 CT</li>
+                <li>$19 / 12 CT</li>
+                <del> <li>$13 / 18 CT</li> </del>
+            </ul>
+                <br />
+                <span class="adjusted-price">SALE: $8.00 / 18 CT</span>
+           
+          </p>
+          <p>
+            "Hello chocolate lovers! This snack is the ultimately sweet treat (and yes! It doesn't hurt that is is extremely healthy)"
+          </p>
+
+          <p><button>Sold Out</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!--Begin footer-->
+    <footer>
+      <div class="footerLinks">
+        <ul>
+          <li>
+            <form method="post" action="https://oim-apis.herokuapp.com/form2">
+              <div>
+                <label for="email"
+                  ><span id="email1">Newsletter Sign Up </span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email address"
+                  size="44"
+                />
+              </div>
+            </form>
+          </li>
+          <li><a href="dummy-page.html">Privacy Policy</a></li>
+          <li><a href="dummy-page.html">Legal</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K4MDE9EQ3E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K4MDE9EQ3E");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Products</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/b2w.png" />
+    <link rel="stylesheet" href="styles/b2w.index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 7%;
+      }
+
+      /* Main column */
+      .main {
+        flex: 90%; /* Set the width of the main content */
+        background-color: rgb(155, 216, 216); /* Grey background color */
+        padding: 20px; /* Some padding */
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      body {
+        background: url(images/examples.png) center fixed repeat;
+      }
+
+      /* for table*/
+      table,
+      td {
+        border: salmon solid 8px;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        width: 100%;
+        height: 800px;
+        text-align: center;
+      }
+
+      caption {
+        color: rgb(155, 216, 216);
+        background-color: salmon;
+        font-weight: 700;
+        font-size: 50px;
+        margin: 10px auto;
+      }
+
+      .column-id {
+        width: 15%;
+        font-weight: 1000;
+        font-size: 70px;
+      }
+
+      .column-img {
+        width: 25%;
+      }
+
+      img td {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+      }
+
+      .column-name {
+        width: 30%;
+        font-size: 20px;
+      }
+
+      .column-price {
+        width: 10%;
+        font-size: 20px;
+      }
+
+      .column-buy-link {
+        width: 10%;
+      }
+
+      tr {
+        height: 10px;
+      }
+
+      .adjusted-price {
+        color: salmon;
+        font-weight: 700;
+        font-size: 30px;
+      }
+
+      table a {
+        background: salmon;
+        border-color: black 100px solid;
+        text-decoration: none;
+        padding: 5px 10px;
+        color: rgb(155, 216, 216);
+        border-radius: 10px;
+        font-size: 40px;
+      }
+
+      #font-smaller {
+        font-size: 8px;
+      }
+      #header1 {
+        background-color: rgb(155, 216, 216);
+      }
+      * {
+        list-style: none;
+      }
+
+      th {
+        background-color: black;
+        font-weight: 700;
+        font-size: 50px;
+        border: rgb(155, 216, 216) solid 8px;
+        color: rgb(155, 216, 216);
+      }
+      li {
+        font-size: larger;
+        font-weight: 500px;
+        letter-spacing: 3px;
+      }
+
+      #extra {
+        font-size: 30px;
+        color: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <div id="logo1">
+          <a href="index.html"
+            ><img src="images/b2w.png" alt="image of B2W logo" height="120" />
+          </a>
+        </div>
+
+        <a href="howtobuy.html">HOW TO BUY</a>
+        <a href="mission.html">MISSION</a>
+        <a href="dummy-page.html">SUPPLIERS</a>
+        <a href="dummy-page.html">NEWS</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">PRODUCTS</button>
+          <div class="dropdown-content">
+            <div class="overview"><a href="#">Overview</a></div>
+            <a href="peanutpower.html">Peanut Power</a>
+            <a href="mochamadness.html">Mocha Madness</a>
+            <a href="cococrazy.html">Crazy Coconut</a>
+            <a href="birthdaybliss.html">Birthday Bliss</a>
+            <a href="amazingapple.html">Amazing Apple</a>
+            <a href="outstandingorange.html">Outstanding Orange</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Header -->
+    <h1><span id="header1"> Our Products </span></h1>
+
+    <div class="promo">
+      <div class="row">
+        <div class="side"></div>
+        <div class="main">
+          <table>
+            <!--BEGIN TABLE -->
+            <caption>
+              Protein Ball Flavors
+            </caption>
+            <tr>
+              <th>Product Name</th>
+              <th>Product Image</th>
+              <th>Ingredients</th>
+              <th>Price</th>
+              <th>Buy Now</th>
+            </tr>
+
+            <tr>
+              <td class="column-id">Peanut Power</td>
+              <td class="column-img">
+                <img
+                  alt="Peanut Protein Power"
+                  src="images/peanutpower.png"
+                  title="Peanut Power"
+                  width="60%"
+                />
+              </td>
+              <td class="column-name">
+                <ul>
+                  <li>Rolled Oats</li>
+                  <li>Honey</li>
+                  <li>Peanuts</li>
+                  <li>Whey Protein</li>
+                  <li>Peanut Butter</li>
+                </ul>
+              </td>
+              <td class="column-price">
+                <ul>
+                  <li>$7 / 6 CT</li>
+                  <li>$10 / 12 CT</li>
+                  <li>$14 / 18 CT</li>
+                </ul>
+              </td>
+              <td class="column-link">
+                <a
+                  href="https://www.apple.com/shop/product/MWP22AM/A/airpods-pro"
+                  >Buy</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td class="column-id">Mocha Madness</td>
+              <td class="column-img">
+                <img
+                  alt="Mocha"
+                  src="images/mochamadness.png"
+                  title="Mocha Madness"
+                  width="50%"
+                />
+              </td>
+              <td class="column-name">
+                <ul>
+                  <li>Dark chocolate</li>
+                  <li>Honey</li>
+                  <li>Vanilla Extract</li>
+                  <li>Almond Butter</li>
+                  <li>Cocoa Powder</li>
+                  <li>Chia Seeds</li>
+                  <li>Whey Protein</li>
+                </ul>
+              </td>
+              <td class="column-price">
+                <ul>
+                  <li>$6 / 6 CT</li>
+                  <li>$19 / 12 CT</li>
+                  <del> <li>$13 / 18 CT</li> </del>
+                </ul>
+                <br />
+                <span class="adjusted-price">SALE: $8.00 / 18 CT</span>
+              </td>
+
+              <td class="column-buy-link">
+                <a href="howtobuy.html">Buy</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="column-id">Coconut Crazy</td>
+              <td class="column-img">
+                <img
+                  alt="Coconut Crazy Protein Ball"
+                  src="images/coconutcrazy.png"
+                  title="Coconut Crazy"
+                  width="60%"
+                />
+              </td>
+              <td class="column-name">
+                <ul>
+                  <li>Coconut</li>
+                  <li>Honey</li>
+                  <li>Vanilla Extract</li>
+                  <li>Peanut Butter</li>
+                  <li>Almond Flower</li>
+                  <li>Lemon Zest</li>
+                  <li>Chia Seeds</li>
+                  <li>Dates</li>
+                  <li>Whey Protein</li>
+                </ul>
+              </td>
+              <td class="column-price">
+                <ul>
+                  <li>$7 / 6 CT</li>
+                  <li>$10 / 12 CT</li>
+                  <li>$14 / 18 CT</li>
+                </ul>
+              </td>
+              <td class="column-link">
+                <a
+                  href="https://www.apple.com/shop/product/MWP22AM/A/airpods-pro"
+                  >Buy</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="column-id">Birthday Bliss</td>
+              <td class="column-img">
+                <img
+                  alt="Birthday Bliss Protein Ball"
+                  src="images/birthdaybliss.png"
+                  title="Birthday Bliss"
+                  width="60%"
+                />
+              </td>
+              <td class="column-name">
+                <ul>
+                  <li>Whey Protein</li>
+                  <li>Coconut Flour</li>
+                  <li>Vanilla Extract</li>
+                  <li>Sugar-free Sprinkles</li>
+                  <li>Coconut Oil</li>
+                  <li>Whey Protein</li>
+                </ul>
+              </td>
+              <td class="column-price">
+                <ul>
+                  <li>$7 / 6 CT</li>
+                  <li>$10 / 12 CT</li>
+                  <li>$14 / 18 CT</li>
+                </ul>
+              </td>
+              <td class="column-link">
+                <a
+                  href="https://www.apple.com/shop/product/MWP22AM/A/airpods-pro"
+                  >Buy</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="column-id">Amazing Apple</td>
+              <td class="column-img">
+                <img
+                  alt="Amazing Apple Protein Ball"
+                  src="images/amazingapple.png"
+                  title="Amazing Apple"
+                  width="80%"
+                />
+              </td>
+              <td class="column-name">
+                <ul>
+                  <li>Apple Puree</li>
+                  <li>Dates</li>
+                  <li>Cinnamon</li>
+                  <li>Nutmeg</li>
+                  <li>Whey Protein</li>
+                  <li>Flaxseed</li>
+                  <li>Oats</li>
+                </ul>
+              </td>
+              <td class="column-price">
+                <ul>
+                  <li>$8 / 6 CT</li>
+                  <li>$11 / 12 CT</li>
+                  <li>$15 / 18 CT</li>
+                </ul>
+              </td>
+              <td class="column-link">
+                <a
+                  href="https://www.apple.com/shop/product/MWP22AM/A/airpods-pro"
+                  >Buy</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td class="column-id" rowspan="2">Outstanding Orange</td>
+              <td class="column-img" rowspan="2">
+                <img
+                  alt="AirPods"
+                  src="images/outstandingorange.png"
+                  title="Orange "
+                  width="65%"
+                />
+              </td>
+              <td class="column-name">
+                <span id="extra"> Extra Protein: </span>
+                <li>Orange Zest</li>
+                <li>Flax seed</li>
+                <li>Raisins</li>
+                <li>Whey Protein</li>
+                <li>Almond Butter</li>
+                <li>Honey</li>
+                <li>Rolled Oats</li>
+                <li>Almond extract</li>
+              </td>
+              <td class="column-price">
+                <ul>
+                  <li>$9 / 6 CT</li>
+                  <li>$12 / 12 CT</li>
+                  <li>$16 / 18 CT</li>
+                </ul>
+              </td>
+              <td class="column-buy-link">
+                <a
+                  href="https://www.apple.com/shop/product/MRXJ2AM/A/airpods-with-wireless-charging-case"
+                  >Buy</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="column-name">
+                <li>Orange Zest</li>
+                <li>Flax seed</li>
+                <li>Raisins</li>
+                <li>Whey Protein</li>
+                <li>Almond Butter</li>
+                <li>Honey</li>
+                <li>Rolled Oats</li>
+                <li>Almond extract</li>
+              </td>
+              <td class="column-price">
+                <ul>
+                  <li>$7 / 6 CT</li>
+                  <li>$10 / 12 CT</li>
+                  <li>$14 / 18 CT</li>
+                </ul>
+              </td>
+              <td class="column-buy-link">
+                <a
+                  href="https://www.apple.com/shop/product/MV7N2AM/A/airpods-with-charging-case"
+                  >Buy</a
+                >
+              </td>
+            </tr>
+          </table>
+          <!--END TABLE -->
+        </div>
+      </div>
+    </div>
+
+    <!--Begin footer-->
+    <footer>
+      <div class="footerLinks">
+        <ul>
+          <li>
+            <form method="post" action="https://oim-apis.herokuapp.com/form2">
+              <div>
+                <label for="email"
+                  ><span id="email1">Newsletter Sign Up </span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email address"
+                  size="44"
+                />
+              </div>
+            </form>
+          </li>
+          <li><a href="dummy-page.html">Privacy Policy</a></li>
+          <li><a href="dummy-page.html">Legal</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

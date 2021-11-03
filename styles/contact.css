@@ -1,0 +1,59 @@
+
+  form {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: salmon;
+    width: 90%;
+    margin-left: auto; /*Important to add this for centering the form */
+    margin-right: auto;
+  }
+  #title {
+    color: rgb(155, 216, 216);
+    background-color: salmon;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  fieldset {
+    margin: 1px auto;
+    border: black 11px solid;
+    display: block;
+  }
+  
+  legend {
+    font-weight: bold;
+    font-size: 60px;
+    color: rgb(155, 216, 216);
+  }
+  
+  label {
+    color: black;
+  }
+  
+  div {
+    margin: 15px auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .about-you label {
+    display: inline-block;
+    clear: left;
+    width: 55px;
+    text-align: left;
+    margin: 5px auto;
+    margin-right: 20px;
+  }
+  
+  .about-you input {
+  
+    display: inline-block;
+    margin: 10px auto;
+    font-size: 20px;
+    
+   
+  }
+  

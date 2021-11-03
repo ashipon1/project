@@ -1,0 +1,151 @@
+/* Navbar links */
+#navbar a {
+
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+body {
+  background-color: rgb(155, 216, 216);
+  z-index: 0;
+  margin-bottom: 5%;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: salmon;
+  width: 100%;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 30px;
+  color: rgb(243, 239, 216);
+  text-align: center;
+  padding: 3% 3%;
+  text-decoration: none;
+  margin-left: 2%;
+  margin-right: 4%;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  padding: 3% 3%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.dropbtn {
+  padding: 3% 3%;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 30px;
+  border: none;
+  outline: 1px black;
+  color: rgb(243, 239, 216);
+  background-color: inherit;
+  z-index: 1;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: salmon;
+  padding: 7px 6px;
+  border-top: 4px salmon solid;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content .overview {
+  background-color: rgb(155, 216, 216);
+}
+
+#logo1 {
+  margin-left: 2%;
+  margin-right: 2.5%;
+  float: left;
+  padding-top: 1%;
+}
+
+* {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 99.5%;
+  background: salmon;
+  height: auto;
+  margin-right: 10%;
+}
+footer .footerLinks ul {
+  list-style-type: none;
+  padding-bottom: 2%px;
+}
+footer .footerLinks ul li {
+  float: left;
+  margin-right: 5%;
+  text-align: center;
+}
+footer .footerLinks ul li a {
+  text-decoration: underline rgb(155, 216, 216);
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+#email1 {
+  text-decoration: underline rgb(155, 216, 216);
+  color: whitesmoke;
+  font-size: 35px;
+  width: 200px;
+  font-size: 28px;
+  margin-bottom: 2%;
+}
+#email-containter {
+  position: fixed;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  margin-top: 3%;
+  font-size: 70px;
+  font-weight: 300em;
+}
+* {
+  list-style: none;
+}

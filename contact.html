@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K4MDE9EQ3E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K4MDE9EQ3E");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/b2w.png" />
+    <link rel="stylesheet" href="styles/b2w.index.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Main column */
+      .main {
+        flex: 90%; /* Set the width of the main content */
+        background-color: rgb(155, 216, 216); /* Grey background color */
+        padding: 20px; /* Some padding */
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 7%;
+      }
+
+      body {
+        background: url(images/examples.png) center fixed repeat;
+        font-size: 25px;
+      }
+
+      * {
+        list-style: none;
+      }
+      label option {
+        font-size: 24px;
+      }
+      #purchase {
+        margin-right: 15px;
+      }
+
+      #hear-about {
+        font-size: 25px;
+        color: rgb(133, 133, 133);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <div id="logo1">
+          <a href="index.html"
+            ><img src="images/b2w.png" alt="image of B2W logo" height="120" />
+          </a>
+        </div>
+
+        <a href="howtobuy.html">HOW TO BUY</a>
+        <a href="mission.html">MISSION</a>
+        <a href="dummy-page.html">SUPPLIERS</a>
+        <a href="dummy-page.html">NEWS</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">PRODUCTS</button>
+          <div class="dropdown-content">
+            <div class="overview"><a href="ourproducts.html">Overview</a></div>
+            <a href="peanutpower.html">Peanut Power</a>
+            <a href="mochamadness.html">Mocha Madness</a>
+            <a href="cococrazy.html">Crazy Coconut</a>
+            <a href="birthdaybliss.html">Birthday Bliss</a>
+            <a href="amazingapple.html">Amazing Apple</a>
+            <a href="outstandingorange.html">Outstanding Orange</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Header -->
+
+    <div class="promo">
+      <div class="main">
+        <div id="title">Contact</div>
+        <form action="https://oim-apis.herokuapp.com/form2" method="post">
+          <fieldset class="about-you">
+            <legend>Your Information:</legend>
+            <div>
+              <label for="input-name"> Name: </label>
+              <input
+                id="input-name"
+                maxlength="100"
+                name="name"
+                placeholder="Enter your full name"
+                size="35"
+                type="text"
+              />
+            </div>
+            <div>
+              <label for="input-email"> Email: </label>
+              <input
+                id="input-email"
+                maxlength="115"
+                name="email"
+                placeholder="Enter your email "
+                size="55"
+                type="email"
+              />
+            </div>
+            <div>
+              <label for="input-phone"> Phone: </label>
+              <input
+                id="input-phone"
+                maxlength="115"
+                name="phone"
+                placeholder="Enter your phone number "
+                size="40"
+                type="phone"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="review">
+            <legend>Your Thoughts:</legend>
+            <div>
+              <label for="hear-about" id="purchase">
+                What B2W product did you purchase?
+              </label>
+
+              <select id="hear-about" name="product">
+                <option value="peanut">Peanut Power</option>
+                <option value="mocha">Mocha Madness</option>
+                <option value="coconut">Crazy Coconut</option>
+                <option value="bday">Birthday Bliss</option>
+                <option value="apple">Amazing Apple</option>
+                <option value="orange">Outstanding Orange</option>
+              </select>
+            </div>
+            <div>
+              What do you think of this product?
+              <br />
+              <label>
+                <input name="cust-rating" type="radio" value="Amazing" />
+                Amazing
+              </label>
+              <label>
+                <input name="cust-rating" type="radio" value="very good" />
+                very good
+              </label>
+              <label>
+                <input name="cust-rating" type="radio" value="good" />
+                good
+              </label>
+              <label>
+                <input name="cust-rating" type="radio" value="decent" />
+                decent
+              </label>
+              <label>
+                <input name="cust-rating" type="radio" value="bad" />
+                bad
+              </label>
+              <label>
+                <input name="cust-rating" type="radio" value="very bad" />
+                very bad
+              </label>
+              <label>
+                <input name="cust-rating" type="radio" value="awful" />
+                awful
+              </label>
+            </div>
+            <div>
+              <label for="comments"> Comments: </label>
+              <br />
+              <textarea cols="50" id="comments" rows="5"></textarea>
+            </div>
+            <div>
+              <label>
+                <input checked="checked" name="subscribe" type="checkbox" />
+                Sign me up for email updates
+              </label>
+            </div>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <!--Begin footer-->
+    <footer>
+      <div class="footerLinks">
+        <ul>
+          <li>
+            <form method="post" action="https://oim-apis.herokuapp.com/form2">
+              <div>
+                <label for="email"
+                  ><span id="email1">Newsletter Sign Up </span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter Email address"
+                  size="44"
+                />
+              </div>
+            </form>
+          </li>
+          <li><a href="dummy-page.html">Privacy Policy</a></li>
+          <li><a href="dummy-page.html">Legal</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
