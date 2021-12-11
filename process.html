@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K4MDE9EQ3E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K4MDE9EQ3E");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Process - How It's Made</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/b2w.png" />
+    <link rel="stylesheet" href="styles/b2w.index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Main column */
+      .main {
+        background-color: rgb(155, 216, 216); /* Grey background color */
+        padding: 20px; /* Some padding */
+        margin-left: 30%;
+        margin-right: 30%;
+      }
+
+      body {
+        background: url(images/examples.png) center fixed repeat;
+      }
+
+      #font-smaller {
+        font-size: 8px;
+      }
+      #header1 {
+        background-color: rgb(155, 216, 216);
+      }
+      * {
+        list-style: none;
+      }
+      #slide-wrapper img {
+        width: 800px;
+        height: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #steps {
+        border: 18px solid;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 70px;
+        color: salmon;
+        text-emphasis: 600px;
+      }
+      h4 {
+        text-align: center;
+        font-size: 50px;
+        color: black;
+        text-emphasis: 400px;
+      }
+
+      p {
+        text-align: center;
+        font-size: 35px;
+      }
+
+      button {
+        width: 35%;
+        font-size: 50px;
+        text-emphasis-color: 400em;
+        background-color: salmon;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <div id="logo1">
+          <a href="index.html"
+            ><img src="images/b2w.png" alt="image of B2W logo" height="120" />
+          </a>
+        </div>
+
+        <a href="howtobuy.html">HOW TO BUY</a>
+        <a href="mission.html">MISSION</a>
+        <a href="suppliers.html">SUPPLIERS</a>
+        <a href="process.html">PROCESS</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">PRODUCTS</button>
+          <div class="dropdown-content">
+            <div class="overview"><a href="ourproducts.html">Overview</a></div>
+            <a href="peanutpower.html">Peanut Power</a>
+            <a href="mochamadness.html">Mocha Madness</a>
+            <a href="cococrazy.html">Crazy Coconut</a>
+            <a href="birthdaybliss.html">Birthday Bliss</a>
+            <a href="amazingapple.html">Amazing Apple</a>
+            <a href="outstandingorange.html">Outstanding Orange</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Header -->
+    <h1><span id="header1"> HOW B2W ARE MADE </span></h1>
+    <!--Both Kunj and Roberto suggested I added this tab in the peer review-->
+
+    <div class="promo">
+      <div class="main">
+        <div id="slide-wrapper">
+          <img src="images/step1.jpg" alt="" id="steps" />
+          <h3 id="number">Step Number</h3>
+          <h4 id="head">Steps in production</h4>
+          <p id="more-details">Description of step</p>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      <button id="which">Which step is most important to us?</button>
+    </p>
+
+    <!--Begin footer-->
+    <footer>
+      <div class="footerLinks">
+        <ul>
+          <li><a href="legal-privacy.html">Privacy Policy</a></li>
+          <li><a href="legal-privacy.html">Legal</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      const slides = [
+        "images/step1.jpg",
+        "images/step2.jpg",
+        "images/step3.jpg",
+        "images/step4.jpg",
+        "images/step5.jpg",
+      ];
+
+      const colors = ["salmon", "rgb(243, 239, 216)", "black", "white", "grey"];
+
+      const stepNumber = [
+        "Step 1",
+        "Step 2",
+        "Step 3",
+        "Step 4",
+        "Step 5 (Final Step)",
+      ];
+      const description = [
+        "Get to Know the Farmer",
+        "Select Fresh Ingredients",
+        "Environmentally Friendly Shipping",
+        "Mix Ingredients",
+        "Form into Protein Balls",
+      ];
+
+      const moreDetails = [
+        "Before working with any farmer, we like to get to know who they are, what their intentions are, and what measures they take to ensure sustainable farm practices",
+        "Our farmers ensure the most fresh and vibrant ingredients are sent to us",
+        "We solely work with electric trucking freights: reducing our carbon footprint associated with the transportation of our ingredients ",
+        "Once we get the ingredients, our chefs combine multiple ingredients to optimize the flavor profile",
+        "After the perfect balance of ingredients are mixed together, we then form them into the protein balls that we all love to devour! Bon appetit!",
+      ];
+
+      let i = 0;
+
+      function slideShow() {
+        let slideImage = document.getElementById("steps");
+        if (i === slides.length) {
+          i = 0;
+        }
+
+        slideImage.src = slides[i]; //to change image file
+        slideImage.style.borderColor = colors[i]; // to access array of colors
+        document.getElementById("head").innerText = description[i]; // to change the text on slide switch
+        document.getElementById("more-details").innerText = moreDetails[i]; // to change paragraph as well
+        document.getElementById("number").innerText = stepNumber[i]; // to change step number
+        i++;
+        setTimeout(slideShow, 6000); //want to give the viewer proper time to read the slide show (6 seconds is sufficient I believe)
+      }
+
+      document.querySelector("img").onload = function () {
+        slideShow();
+      };
+
+      function alertYou() {
+        alert("TRICK QUESTION: None! We value all of them equally ");
+      }
+      document.getElementById("which").onclick = alertYou;
+    </script>
+  </body>
+</html>

@@ -17,6 +17,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>How to Buy</title>
     <link rel="shortcut icon" type="image/jpg" href="images/b2w.png" />
     <link rel="stylesheet" href="styles/b2w.index.css" />
@@ -120,8 +121,8 @@
 
         <a href="#">HOW TO BUY</a>
         <a href="mission.html">MISSION</a>
-        <a href="dummy-page.html">SUPPLIERS</a>
-        <a href="dummy-page.html">NEWS</a>
+        <a href="suppliers.html">SUPPLIERS</a>
+        <a href="process.html">PROCESS</a>
 
         <div class="dropdown">
           <button class="dropbtn">PRODUCTS</button>
@@ -151,6 +152,7 @@
                 alt="Amazon-Logo"
                 title="Amazon"
                 width="60%"
+                id="amazon"
               />
             </a>
             <div class="centered"></div>
@@ -162,6 +164,7 @@
                 alt="WholeFoods-Logo"
                 title="Whole Foods"
                 width="60%"
+                id="wf"
               />
             </a>
           </div>
@@ -172,6 +175,7 @@
                 alt="TraderJoes-Logo"
                 title="Trader Joes"
                 width="60%"
+                id="tj"
               />
             </a>
           </div>
@@ -288,28 +292,51 @@
     <footer>
       <div class="footerLinks">
         <ul>
-          <li>
-            <form method="post" action="https://oim-apis.herokuapp.com/form2">
-              <div>
-                <label for="email"
-                  ><span id="email1">Newsletter Sign Up </span>
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email address"
-                  size="44"
-                />
-              </div>
-            </form>
-          </li>
-          <li><a href="dummy-page.html">Privacy Policy</a></li>
-          <li><a href="dummy-page.html">Legal</a></li>
+          <li><a href="legal-privacy.html">Privacy Policy</a></li>
+          <li><a href="legal-privacy.html">Legal</a></li>
           <li><a href="sitemap.html">Site Map</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
     </footer>
+    <script>
+      //trader joes
+      function newImageAmazon() {
+        document.getElementById("amazon").src = "images/amazon2.png";
+      }
+
+      function revertAmazon() {
+        document.getElementById("amazon").src = "images/amazon.png";
+      }
+
+      document.getElementById("amazon").onmouseover = newImageAmazon;
+      document.getElementById("amazon").onmouseout = revertAmazon;
+
+      //whole foods
+
+      function newImageWf() {
+        document.getElementById("wf").src = "images/wf2.png";
+      }
+
+      function revertWf() {
+        document.getElementById("wf").src = "images/wholefoods.png";
+      }
+
+      document.getElementById("wf").onmouseover = newImageWf;
+      document.getElementById("wf").onmouseout = revertWf;
+
+      //trader joes
+
+      function newImageTj() {
+        document.getElementById("tj").src = "images/tj2.png";
+      }
+
+      function revertTj() {
+        document.getElementById("tj").src = "images/traderjoes.png";
+      }
+
+      document.getElementById("tj").onmouseover = newImageTj;
+      document.getElementById("tj").onmouseout = revertTj;
+    </script>
   </body>
 </html>

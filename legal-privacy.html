@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K4MDE9EQ3E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K4MDE9EQ3E");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal/Privacy</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/b2w.png" />
+    <link rel="stylesheet" href="styles/b2w.index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Main column */
+      .main {
+        flex: 90%; /* Set the width of the main content */
+        background-color: rgb(155, 216, 216); /* Grey background color */
+        padding: 20px; /* Some padding */
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      body {
+        background: url(images/examples.png) center fixed repeat;
+      }
+
+      #font-smaller {
+        font-size: 8px;
+      }
+      #header1 {
+        background-color: rgb(155, 216, 216);
+      }
+      * {
+        list-style: none;
+      }
+      #construction {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-bottom: 20%;
+      }
+
+      h4 {
+        text-align: center;
+      }
+      #words {
+        position: absolute;
+        color: salmon;
+        font-size: 150px;
+        text-emphasis: 500em;
+      }
+      #animate {
+        position: relative;
+        border: 50px solid salmon;
+        height: 1400px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: rgb(155, 216, 216);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <div id="logo1">
+          <a href="index.html"
+            ><img src="images/b2w.png" alt="image of B2W logo" height="120" />
+          </a>
+        </div>
+
+        <a href="howtobuy.html">HOW TO BUY</a>
+        <a href="mission.html">MISSION</a>
+        <a href="suppliers.html">SUPPLIERS</a>
+        <a href="process.html">PROCESS</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">PRODUCTS</button>
+          <div class="dropdown-content">
+            <div class="overview"><a href="ourproducts.html">Overview</a></div>
+            <a href="peanutpower.html">Peanut Power</a>
+            <a href="mochamadness.html">Mocha Madness</a>
+            <a href="cococrazy.html">Crazy Coconut</a>
+            <a href="birthdaybliss.html">Birthday Bliss</a>
+            <a href="amazingapple.html">Amazing Apple</a>
+            <a href="outstandingorange.html">Outstanding Orange</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Header -->
+    <h1><span id="header1"> Legal Notice/Privacy Policy </span></h1>
+
+    <div id="animate">
+      <h3 id="words">This text will move</h3>
+    </div>
+
+    <!--Begin footer-->
+    <footer>
+      <div class="footerLinks">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      const legalNotice = [
+        "This website is one representing of a fictitious business",
+        "The information contained in this website is provided for educational purposes only",
+        "and should not be construed as legal advice on any matter.",
+        "For your privacy, please be aware about the following:",
+        "Google Analytics tracking has been implemented for research purposes",
+        "Thank you so much! I hope you enjoy this project.",
+      ];
+
+      const colors = [
+        "salmon",
+        "black",
+        "rgb(245,245,245)",
+        "tan",
+        "grey",
+        "silver",
+      ];
+      const words = document.getElementById("words");
+      let p = 5;
+      let i = 0;
+
+      function lawAlert() {
+        words.innerHTML = legalNotice[i];
+        words.style.color = colors[i];
+        words.style.left = p + "px"; // what is px
+        if (p > document.getElementById("animate").clientWidth - 915) {
+          p = 5; //
+          i++;
+          if (i === legalNotice.length) {
+            i = 0;
+          }
+        } else {
+          p = p + 5;
+        }
+        setTimeout(lawAlert, 25);
+      }
+
+      document.querySelector("body").onload = lawAlert;
+    </script>
+  </body>
+</html>

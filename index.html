@@ -55,36 +55,36 @@
         padding-top: 3px;
       }
 
-      #indexleft {
+      #left {
         margin-top: 20px;
         margin-left: 2%;
         margin-bottom: 2%;
-        height: 1200px;
+        height: 800px;
         position: absolute;
         box-sizing: border-box;
         margin-right: 1%;
         width: 27%;
       }
 
-      #indexcenter {
+      #center {
         margin-left: 1%;
         margin-right: 1%;
         margin-bottom: 2%;
-        height: 1200px;
+        height: 800px;
         margin-top: 20px;
         position: absolute;
         width: 27%;
         box-sizing: border-box;
       }
 
-      #indexright {
+      #right {
         margin-left: 1%;
         margin-bottom: 2%;
         margin-top: 20px;
         margin-right: 2%;
         border-right: 5px;
         position: absolute;
-        height: 1200px;
+        height: 800px; /*I decreased the height as per Roberto's and Kunj's suggestion*/
         width: 27%;
         box-sizing: border-box;
       }
@@ -111,7 +111,7 @@
         letter-spacing: 5px;
       }
       img:hover {
-        opacity: 0.6; /* this is used to make the photo appear blurry/opaque when the mouse hovers over the image*. This function can be found when hovering over ALEX.png*/
+        opacity: 0.9; /* this is used to make the photo appear blurry/opaque when the mouse hovers over the image*. This function can be found when hovering over ALEX.png*/
       }
 
       #box {
@@ -122,35 +122,69 @@
       body {
         background: url(images/examples.png) center fixed repeat;
       }
+
+      #nice {
+        color: whitesmoke;
+        font-size: 100px;
+        position: relative;
+        margin-top: 40%;
+      }
+
+      h5 {
+        margin-left: 88%;
+        color: black;
+        position: absolute;
+        font-size: 30px;
+        margin-top: 2.12%;
+        text-align: center;
+        width: 8%;
+        height: 7.2%;
+
+        text-emphasis: 100em;
+        border: 8px solid;
+        border-color: black;
+        background-color: rgb(155, 216, 216);
+      }
     </style>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="head">
       <div class="navbar">
         <div id="logo1">
           <a href="#"
-            ><img src="images/b2w.png" alt="image of B2W logo" height="120" />
+            ><img
+              src="images/b2w.png"
+              alt="image of B2W logo"
+              height="150"
+              id="logo123"
+            />
           </a>
         </div>
 
-        <a href="howtobuy.html">HOW TO BUY</a>
-        <a href="mission.html">MISSION</a>
-        <a href="dummy-page.html">SUPPLIERS</a>
-        <a href="dummy-page.html">NEWS</a>
+        <a href="howtobuy.html" id="buy" class="alt">HOW TO BUY</a>
+        <a href="mission.html" id="mission" class="alt"> MISSION</a>
+        <a href="suppliers.html" id="suppliers" class="alt">SUPPLIERS</a>
+        <a href="process.html" id="process" class="alt"> PROCESS</a>
 
         <div class="dropdown">
-          <button class="dropbtn">PRODUCTS</button>
+          <button class="dropbtn" id="products">PRODUCTS</button>
           <div class="dropdown-content">
             <div class="overview"><a href="ourproducts.html">Overview</a></div>
 
-            <a href="peanutpower.html">Peanut Power</a>
-            <a href="mochamadness.html">Mocha Madness</a>
-            <a href="cococrazy.html">Crazy Coconut</a>
-            <a href="birthdaybliss.html">Birthday Bliss</a>
-            <a href="amazingapple.html">Amazing Apple</a>
-            <a href="outstandingorange.html">Outstanding Orange</a>
+            <a href="peanutpower.html" id="peanut">Peanut Power</a>
+            <a href="mochamadness.html" id="mocha">Mocha Madness</a>
+            <a href="cococrazy.html" id="crazy">Crazy Coconut</a>
+            <a href="birthdaybliss.html" id="birthday">Birthday Bliss</a>
+            <a href="amazingapple.html" id="amazing">Amazing Apple</a>
+            <a href="outstandingorange.html" id="outstanding"
+              >Outstanding Orange</a
+            >
           </div>
         </div>
+        <h5>
+          TIME:
+          <div id="clock"></div>
+        </h5>
       </div>
       <div class="blank1">-</div>
       <div class="blank2">-</div>
@@ -159,26 +193,26 @@
     <!-- End of Header -->
     <div>
       <audio controls autoplay>
-        <source src="audio/dru.mp3" type="audio/ogg" loop="loop" widh />
+        <source src="audio/dru.mp3" type="audio/ogg" loop="loop" />
       </audio>
     </div>
+
     <div id="box">
-      <div class="intro">|Balls2TheWall|</div>
-      <div class="slogan">Delicious.Nutritious.Expeditious</div>
+      <div class="intro" id="intro">|Balls2TheWall|</div>
+      <div class="slogan" id="slogan">Delicious.Nutritious.Expeditious</div>
     </div>
 
     <div class="row">
       <div class="column">
         <figure>
-          <a
-            href="mission.html"
+          <a href="mission.html"
             ><img
               src="images/indexleft.png"
               alt="Sustainability Practices"
-              id="indexleft"
+              id="left"
               title="Farming Practices"
             />
-            <figcaption>Sustainable sourcing</figcaption>
+            <figcaption id="left1">Sustainable sourcing</figcaption>
           </a>
         </figure>
       </div>
@@ -189,10 +223,10 @@
             ><img
               src="images/proteinballs.jpg"
               alt="Our-Products"
-              id="indexcenter"
+              id="center"
               title="New Products"
             />
-            <figcaption>New flavors!</figcaption>
+            <figcaption id="center1">New flavors</figcaption>
           </a>
         </figure>
       </div>
@@ -203,42 +237,519 @@
             ><img
               src="images/store.jpg"
               alt="Grand-Opening"
-              id="indexright"
+              id="right"
               title="Grand Opening"
             />
-            <figcaption>Grand Opening</figcaption>
+            <figcaption id="right1">Grand Opening</figcaption>
           </a>
         </figure>
       </div>
     </div>
+    <p id="nice"></p>
+    <!--Begin footer-->
 
-    <!--Begin footer-->
-    <!--Begin footer-->
-    <footer>
+    <footer id="foot">
       <div class="footerLinks">
         <ul>
-          <li>
-            <form method="post" action="https://oim-apis.herokuapp.com/form2">
-              <div>
-                <label for="email"
-                  ><span id="email1">Newsletter Sign Up </span>
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email address"
-                  size="44"
-                />
-              </div>
-            </form>
-          </li>
-          <li><a href="dummy-page.html">Privacy Policy</a></li>
-          <li><a href="dummy-page.html">Legal</a></li>
+          <li><a href="legal-privacy.html">Privacy Policy</a></li>
+          <li><a href="legal-privacy.html">Legal</a></li>
           <li><a href="sitemap.html">Site Map</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
     </footer>
+    <script>
+      //change logo size and footer color on footer mouseover
+      function changeHeadFoot() {
+        const b2wImage = document.getElementById("logo123");
+        let pi = b2wImage.width;
+        pi = pi * 1.8;
+        b2wImage.width = pi;
+
+        let wi = b2wImage.height;
+        wi = wi * 1.8;
+        b2wImage.height = wi;
+
+        document.getElementById("foot").style.backgroundColor =
+          "rgb(155, 216, 216)";
+      }
+      function revertHeadFoot() {
+        document.getElementById("foot").style.backgroundColor = "salmon";
+        const b2wImage = document.getElementById("logo123");
+        let pi = b2wImage.width;
+        pi = pi / 1.8;
+        b2wImage.width = pi;
+
+        let wi = b2wImage.height;
+        wi = wi / 1.8;
+        b2wImage.height = pi;
+      }
+
+      document.getElementById("foot").onmouseover = changeHeadFoot;
+      document.getElementById("foot").onmouseout = revertHeadFoot;
+
+      // increase header word size and color / revert on mouse off
+      function changeBuy() {
+        document.getElementById("buy").style.color = "rgb(155, 216, 216)";
+        document.getElementById("buy").style.fontSize = "70px";
+        document.getElementById("buy").style.backgroundColor = "black";
+      }
+      function revertBuy() {
+        document.getElementById("buy").style.color = "rgb(243, 239, 216)";
+        document.getElementById("buy").style.fontSize = "30px";
+        document.getElementById("buy").style.backgroundColor = "salmon";
+      }
+
+      document.getElementById("buy").onmouseover = changeBuy;
+      document.getElementById("buy").onmouseout = revertBuy;
+
+      function changeMission() {
+        document.getElementById("mission").style.color = "rgb(155, 216, 216)";
+        document.getElementById("mission").style.fontSize = "70px";
+      }
+      function revertMission() {
+        document.getElementById("mission").style.color = "rgb(243, 239, 216)";
+        document.getElementById("mission").style.fontSize = "30px";
+      }
+
+      document.getElementById("mission").onmouseover = changeMission;
+      document.getElementById("mission").onmouseout = revertMission;
+
+      function changeSuppliers() {
+        document.getElementById("suppliers").style.color = "rgb(155, 216, 216)";
+        document.getElementById("suppliers").style.fontSize = "70px";
+      }
+      function revertSuppliers() {
+        document.getElementById("suppliers").style.color = "rgb(243, 239, 216)";
+        document.getElementById("suppliers").style.fontSize = "30px";
+      }
+
+      document.getElementById("suppliers").onmouseover = changeSuppliers;
+      document.getElementById("suppliers").onmouseout = revertSuppliers;
+
+      function changeProcess() {
+        document.getElementById("process").style.color = "rgb(155, 216, 216)";
+        document.getElementById("process").style.fontSize = "70px";
+      }
+      function revertProcess() {
+        document.getElementById("process").style.color = "rgb(243, 239, 216)";
+        document.getElementById("process").style.fontSize = "30px";
+      }
+
+      document.getElementById("process").onmouseover = changeProcess;
+      document.getElementById("process").onmouseout = revertProcess;
+
+      function changeProducts() {
+        document.getElementById("products").style.color = "rgb(155, 216, 216)";
+        document.getElementById("products").style.fontSize = "70px";
+      }
+      function revertProducts() {
+        document.getElementById("products").style.color = "rgb(243, 239, 216)";
+        document.getElementById("products").style.fontSize = "30px";
+      }
+
+      document.getElementById("products").onmouseover = changeProducts;
+      document.getElementById("products").onmouseout = revertProducts;
+
+      // for making drop-down interactive
+
+      function changePeanut() {
+        document.getElementById("peanut").style.color = "black";
+        document.getElementById("peanut").style.backgroundColor = "salmon";
+        document.getElementById("mocha").style.backgroundColor = "black";
+        document.getElementById("crazy").style.backgroundColor = "black";
+        document.getElementById("birthday").style.backgroundColor = "black";
+        document.getElementById("amazing").style.backgroundColor = "black";
+        document.getElementById("outstanding").style.backgroundColor = "black";
+      }
+      function revertPeanut() {
+        document.getElementById("peanut").style.color = "salmon";
+        document.getElementById("peanut").style.backgroundColor =
+          "rgb(243, 239, 216)";
+        document.getElementById("mocha").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("crazy").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("birthday").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("amazing").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("outstanding").style.backgroundColor =
+          "rgb(245,245,245)";
+      }
+
+      document.getElementById("peanut").onmouseover = changePeanut;
+      document.getElementById("peanut").onmouseout = revertPeanut;
+
+      function changeMocha() {
+        document.getElementById("mocha").style.color = "black";
+        document.getElementById("mocha").style.backgroundColor = "salmon";
+
+        document.getElementById("peanut").style.backgroundColor = "black";
+        document.getElementById("crazy").style.backgroundColor = "black";
+        document.getElementById("birthday").style.backgroundColor = "black";
+        document.getElementById("amazing").style.backgroundColor = "black";
+        document.getElementById("outstanding").style.backgroundColor = "black";
+      }
+      function revertMocha() {
+        document.getElementById("mocha").style.color = "salmon";
+        document.getElementById("mocha").style.backgroundColor =
+          "rgb(243, 239, 216)";
+        document.getElementById("peanut").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("crazy").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("birthday").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("amazing").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("outstanding").style.backgroundColor =
+          "rgb(245,245,245)";
+      }
+
+      document.getElementById("mocha").onmouseover = changeMocha;
+      document.getElementById("mocha").onmouseout = revertMocha;
+
+      function changeCrazy() {
+        document.getElementById("crazy").style.color = "black";
+        document.getElementById("crazy").style.backgroundColor = "salmon";
+        document.getElementById("peanut").style.backgroundColor = "black";
+        document.getElementById("mocha").style.backgroundColor = "black";
+        document.getElementById("birthday").style.backgroundColor = "black";
+        document.getElementById("amazing").style.backgroundColor = "black";
+        document.getElementById("outstanding").style.backgroundColor = "black";
+      }
+      function revertCrazy() {
+        document.getElementById("crazy").style.color = "salmon";
+        document.getElementById("crazy").style.backgroundColor =
+          "rgb(243, 239, 216)";
+        document.getElementById("peanut").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("mocha").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("birthday").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("amazing").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("outstanding").style.backgroundColor =
+          "rgb(245,245,245)";
+      }
+
+      document.getElementById("crazy").onmouseover = changeCrazy;
+      document.getElementById("crazy").onmouseout = revertCrazy;
+
+      function changeBirthday() {
+        document.getElementById("birthday").style.color = "black";
+        document.getElementById("birthday").style.backgroundColor = "salmon";
+
+        document.getElementById("peanut").style.backgroundColor = "black";
+        document.getElementById("mocha").style.backgroundColor = "black";
+        document.getElementById("crazy").style.backgroundColor = "black";
+        document.getElementById("amazing").style.backgroundColor = "black";
+        document.getElementById("outstanding").style.backgroundColor = "black";
+      }
+      function revertBirthday() {
+        document.getElementById("birthday").style.color = "salmon";
+        document.getElementById("birthday").style.backgroundColor =
+          "rgb(243, 239, 216)";
+
+        document.getElementById("peanut").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("mocha").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("crazy").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("amazing").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("outstanding").style.backgroundColor =
+          "rgb(245,245,245)";
+      }
+
+      document.getElementById("birthday").onmouseover = changeBirthday;
+      document.getElementById("birthday").onmouseout = revertBirthday;
+
+      function changeAmazing() {
+        document.getElementById("amazing").style.color = "black";
+        document.getElementById("amazing").style.backgroundColor = "salmon";
+
+        document.getElementById("peanut").style.backgroundColor = "black";
+        document.getElementById("mocha").style.backgroundColor = "black";
+        document.getElementById("crazy").style.backgroundColor = "black";
+        document.getElementById("birthday").style.backgroundColor = "black";
+        document.getElementById("outstanding").style.backgroundColor = "black";
+      }
+      function revertAmazing() {
+        document.getElementById("amazing").style.color = "salmon";
+        document.getElementById("amazing").style.backgroundColor =
+          "rgb(243, 239, 216)";
+        document.getElementById("peanut").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("mocha").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("crazy").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("birthday").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("outstanding").style.backgroundColor =
+          "rgb(245,245,245)";
+      }
+
+      document.getElementById("amazing").onmouseover = changeAmazing;
+      document.getElementById("amazing").onmouseout = revertAmazing;
+
+      function changeOutstanding() {
+        document.getElementById("outstanding").style.color = "black";
+        document.getElementById("outstanding").style.backgroundColor = "salmon";
+
+        document.getElementById("peanut").style.backgroundColor = "black";
+        document.getElementById("mocha").style.backgroundColor = "black";
+        document.getElementById("crazy").style.backgroundColor = "black";
+        document.getElementById("birthday").style.backgroundColor = "black";
+        document.getElementById("amazing").style.backgroundColor = "black";
+      }
+      function revertOutstanding() {
+        document.getElementById("outstanding").style.color = "salmon";
+        document.getElementById("outstanding").style.backgroundColor =
+          "rgb(243, 239, 216)";
+
+        document.getElementById("peanut").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("mocha").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("crazy").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("birthday").style.backgroundColor =
+          "rgb(245,245,245)";
+        document.getElementById("amazing").style.backgroundColor =
+          "rgb(245,245,245)";
+      }
+
+      document.getElementById("outstanding").onmouseover = changeOutstanding;
+      document.getElementById("outstanding").onmouseout = revertOutstanding;
+
+      //to change words and rotate logo on mouseover/mouseout on title/div
+
+      document.getElementById("intro").onmouseover = function () {
+        mouseOver();
+      };
+      document.getElementById("intro").onmouseout = function () {
+        mouseOut();
+      };
+
+      function mouseOver() {
+        document.getElementById("intro").innerText = "|The new trend|";
+        document.getElementById("intro").style.color = "rgb(243, 239, 216)";
+        document.getElementById("logo123").style.transform = "rotate(360deg)"; //flip logo
+      }
+      function mouseOut() {
+        document.getElementById("intro").innerText = "Balls2TheWall";
+        document.getElementById("intro").style.color = "black";
+        document.getElementById("logo123").style.transform = "rotate(180deg)";
+      }
+
+      //slogan on click
+      document.getElementById("slogan").onclick = function () {
+        mouseClick();
+      };
+
+      function mouseClick() {
+        document.getElementById("slogan").innerText = "Snack Properly";
+        document.getElementById("slogan").style.color = "rgb(243, 239, 216)";
+      }
+
+      document.getElementById("slogan").ondblclick = function () {
+        mouseDblClick();
+      };
+      // slogan on double slick
+      function mouseDblClick() {
+        document.getElementById("slogan").innerText =
+          "|Delicious.Nutritious.Expeditious|";
+        document.getElementById("slogan").style.color = "grey";
+      }
+
+      //Mouse over change image source
+      //left image--> additional component of making words appear beneath
+      function newImageLeft() {
+        document.getElementById("left").src = "images/imageleft2.jpg";
+        document.getElementById("nice").innerText =
+          "We are glad you are interested in this!";
+      }
+
+      function revertLeft() {
+        document.getElementById("left").src = "images/indexleft.png";
+        document.getElementById("nice").innerText = "";
+      }
+
+      document.getElementById("left").onmouseover = newImageLeft;
+      document.getElementById("left").onmouseout = revertLeft;
+
+      //center image
+      // function newImageCenter() {
+      //   document.getElementById("center").src = "images/imagecenter2.jpg";
+      // }
+
+      // function revertCenter() {
+      //   document.getElementById("center").src = "images/proteinballs.jpg";
+      // }
+
+      // document.getElementById("center").onmouseover = newImageCenter;
+      // document.getElementById("center").onmouseout = revertCenter;
+
+      // //right image
+
+      // function newImageRight() {
+      //   document.getElementById("right").src = "images/imageright2.jpg";
+      // }
+
+      // function revertRight() {
+      //   document.getElementById("right").src = "images/store.jpg";
+      // }
+
+      // document.getElementById("right").onmouseover = newImageRight;
+      // document.getElementById("right").onmouseout = revertRight;
+
+      //for making figcaptions dynamic
+
+      // left image
+      document.getElementById("left1").onmouseover = function () {
+        mouseOverLeft();
+      };
+      document.getElementById("left1").onmouseout = function () {
+        mouseOutLeft();
+      };
+
+      function mouseOverLeft() {
+        document.getElementById("left1").innerText =
+          "Click for more information!";
+        document.getElementById("left1").style.color = "rgb(155, 216, 216)";
+        document.getElementById("left1").style.backgroundColor = "salmon";
+      }
+      function mouseOutLeft() {
+        document.getElementById("left1").innerText = "Sustainable Sourcing ";
+        document.getElementById("left1").style.color = "rgb(243, 239, 216)";
+        document.getElementById("left1").style.backgroundColor = "black";
+      }
+      //center image
+      document.getElementById("center1").onmouseover = function () {
+        mouseOverCenter();
+      };
+      document.getElementById("center1").onmouseout = function () {
+        mouseOutCenter();
+      };
+
+      function mouseOverCenter() {
+        document.getElementById("center1").innerText =
+          "Click for more information!";
+        document.getElementById("center1").style.color = "rgb(155, 216, 216)";
+        document.getElementById("center1").style.backgroundColor = "salmon";
+      }
+      function mouseOutCenter() {
+        document.getElementById("center1").innerText = "New Flavors ";
+        document.getElementById("center1").style.color = "rgb(243, 239, 216)";
+        document.getElementById("center1").style.backgroundColor = "black";
+      }
+      //right image
+
+      document.getElementById("right1").onmouseover = function () {
+        mouseOverRight();
+      };
+      document.getElementById("right1").onmouseout = function () {
+        mouseOutRight();
+      };
+
+      function mouseOverRight() {
+        document.getElementById("right1").innerText =
+          "Click for more information!";
+        document.getElementById("right1").style.color = "rgb(155, 216, 216)";
+        document.getElementById("right1").style.backgroundColor = "salmon";
+      }
+      function mouseOutRight() {
+        document.getElementById("right1").innerText = "Grand opening";
+        document.getElementById("right1").style.color = "rgb(243, 239, 216)";
+        document.getElementById("right1").style.backgroundColor = "black";
+      }
+
+      //clock
+
+      function showTime() {
+        const clock = document.getElementById("clock");
+        const refresh = new Date();
+        const hours = refresh.getHours();
+        let minutes = refresh.getMinutes();
+        if (minutes < 10) {
+          minutes = "0" + minutes;
+        }
+
+        let seconds = refresh.getSeconds();
+        if (seconds < 10) {
+          seconds = "0" + seconds;
+        }
+
+        clock.innerHTML = hours + ":" + minutes + ":" + seconds;
+
+        setTimeout(showTime, 1000);
+      }
+
+      document.querySelector("body").onload = showTime;
+
+      //change background-color of clock
+
+      function changeBackgroundColor() {
+        const bgColors = [
+          "tan",
+          "salmon",
+          "rgb(155, 216, 216)",
+          "rgb(245, 245, 245)",
+        ];
+        const n = bgColors.length;
+        const randIndex = Math.floor(Math.random() * n);
+        // const b = document.getElementById("bodyA");
+        const b = document.querySelector("h5");
+        b.style.backgroundColor = bgColors[randIndex];
+      }
+
+      document.getElementById("right").onmouseover = changeBackgroundColor;
+
+      // change header elements after user mouses over on middle image
+      //I tried to make this page fun by adding a unique functionality for each mouseover of the 3 images
+
+      function changeInner() {
+        document.getElementById("buy").innerText = "Thank";
+        document.getElementById("buy").style.fontWeight = "990";
+        document.getElementById("mission").innerText = "you";
+        document.getElementById("mission").style.fontWeight = "990";
+        document.getElementById("suppliers").innerText = "for";
+        document.getElementById("suppliers").style.fontWeight = "990";
+        document.getElementById("process").innerText = "visiting";
+        document.getElementById("process").style.fontWeight = "990";
+        document.getElementById("products").innerText = "today!";
+        document.getElementById("products").style.fontWeight = "990";
+        document.getElementById("intro").innerText = "Enjoy your visit!";
+        document.getElementById("intro").style.color = "salmon";
+        document.getElementById("slogan").innerText = "you are appreciated";
+        document.getElementById("slogan").style.color = "rgb(245,245,245)";
+      }
+
+      function revertInner() {
+        document.getElementById("buy").innerText = "How to buy";
+        document.getElementById("buy").style.fontWeight = "0";
+        document.getElementById("mission").innerText = "mission";
+        document.getElementById("mission").style.fontWeight = "0";
+        document.getElementById("suppliers").innerText = "suppliers";
+        document.getElementById("suppliers").style.fontWeight = "0";
+        document.getElementById("process").innerText = "process";
+        document.getElementById("process").style.fontWeight = "0";
+        document.getElementById("products").innerText = "products";
+        document.getElementById("products").style.fontWeight = "0";
+        document.getElementById("intro").innerText = "Balls2theWall";
+        document.getElementById("intro").style.color = "black";
+        document.getElementById("slogan").innerText =
+          "Delicious.Nutritious.Expeditious ";
+        document.getElementById("slogan").style.color = "salmon";
+      }
+
+      document.getElementById("center").onmouseover = changeInner;
+      document.getElementById("center").onmouseout = revertInner;
+    </script>
   </body>
 </html>

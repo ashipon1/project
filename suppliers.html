@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K4MDE9EQ3E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K4MDE9EQ3E");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suppliers</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/b2w.png" />
+    <link rel="stylesheet" href="styles/b2w.index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Main column */
+      .main {
+        flex: 90%; /* Set the width of the main content */
+        background-color: rgb(155, 216, 216); /* Grey background color */
+        padding: 20px; /* Some padding */
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      body {
+        background: url(images/examples.png) center fixed repeat;
+      }
+
+      #font-smaller {
+        font-size: 8px;
+      }
+      #header1 {
+        background-color: rgb(155, 216, 216);
+      }
+      * {
+        list-style: none;
+      }
+
+      body {
+        height: auto;
+      }
+
+      h2 {
+        text-transform: capitalize;
+        margin: 0;
+        color: salmon;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      main {
+        max-width: 900px;
+        margin: auto;
+        box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+          -30px 0px 40px rgba(0, 0, 0, 0.1); /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+      }
+
+      #landing {
+        background: whitesmoke;
+      }
+
+      #landing-text {
+        /*https://developer.mozilla.org/en-US/docs/Web/CSS/flex*/
+        display: flex;
+        flex: 0 1 40vw;
+        height: 112vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 3rem;
+        padding-left: 3rem;
+      }
+
+      #landing-image {
+        background: url(https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/07/Male_Farm_1296x728-header-1296x729.jpg?w=1155&h=2268);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80vh;
+        flex: 0 1 60vw;
+        margin: 0;
+      }
+
+      #landing-text h2 {
+        color: rgb(155, 216, 216);
+      }
+
+      .btn {
+        padding: 0.5rem 2rem;
+        border: 4.76px black solid;
+        display: inline-block;
+        margin: 2rem 0 0;
+        border-radius: 50px;
+        color: black;
+        transition: background 500ms ease;
+      }
+
+      .btn:hover {
+        background: whitesmoke;
+        border: 6px salmon solid;
+      }
+
+      #header {
+        padding: 1.5rem;
+        text-align: center;
+        background: #333;
+        color: whitesmoke;
+      }
+
+      #header h2 {
+        border-left: dotted 1px whitesmoke;
+        border-right: dotted 1px whitesmoke;
+        display: inline-block;
+        padding-right: 2.2rem;
+        padding-left: 2.2rem;
+        color: salmon;
+      }
+
+      .caption {
+        padding: 0.8rem;
+        text-align: center;
+      }
+
+      #our-suppliers {
+        font-size: 44px;
+      }
+
+      footer h3 {
+        font-size: 3rem;
+        margin-bottom: 0;
+      }
+
+      @media (min-width: 500px) {
+        #landing {
+          display: flex;
+          height: 98%;
+        }
+
+        #landing-text {
+          height: 100vh;
+        }
+
+        #landing-image {
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 700px) {
+        .btn {
+          padding: 2rem 2rem;
+          background-color: salmon;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        img {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+        footer {
+          display: none;
+        }
+      }
+      p {
+        font-size: 30px;
+      }
+
+      h3 {
+        color: salmon;
+        font-size: 50px;
+        text-emphasis: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <div id="logo1">
+          <a href="index.html"
+            ><img src="images/b2w.png" alt="image of B2W logo" height="120" />
+          </a>
+        </div>
+
+        <a href="howtobuy.html">HOW TO BUY</a>
+        <a href="mission.html">MISSION</a>
+        <a href="#">SUPPLIERS</a>
+        <a href="process.html">PROCESS</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">PRODUCTS</button>
+          <div class="dropdown-content">
+            <div class="overview"><a href="ourproducts.html">Overview</a></div>
+            <a href="peanutpower.html">Peanut Power</a>
+            <a href="mochamadness.html">Mocha Madness</a>
+            <a href="cococrazy.html">Crazy Coconut</a>
+            <a href="birthdaybliss.html">Birthday Bliss</a>
+            <a href="amazingapple.html">Amazing Apple</a>
+            <a href="outstandingorange.html">Outstanding Orange</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Header -->
+    <h1><span id="header1"> Our Suppliers </span></h1>
+
+    <div class="promo">
+      <div class="main">
+        <main>
+          <!-- Landing Area -->
+          <div id="landing">
+            <div id="landing-text">
+              <div id="landing-text-inner">
+                <h1 id="our-suppliers">About Our Suppliers</h1>
+                <h2>Committed to Sustainability</h2>
+                <a href="#images" class="btn" id="view-work"> View Work </a>
+              </div>
+            </div>
+            <div id="landing-image"></div>
+          </div>
+
+          <div id="images">
+            <div id="header">
+              <h2>A look into their Stories/Missions</h2>
+            </div>
+
+            <img
+              src="https://media.istockphoto.com/photos/concept-of-an-open-magic-book-open-pages-with-water-and-land-and-picture-id1279460648?b=1&k=20&m=1279460648&s=170667a&w=0&h=uZa830sWo8hlFN0Y7FnQ14giNC0Z2EBNuTMuNJeJhQg="
+              alt="stories"
+              id="story"
+              title="Look into their mission"
+            />
+            <div class="caption">
+              <h3>Herit Farms (New York)</h3>
+              <p>
+                They specialize in Hyrdrophonics: a tremendous way to limit the
+                carbon disaster tradition farming can pose. Specifically,
+                Hydroponics is a type of horticulture and a subset of
+                hydroculture which involves growing plants without soil, by
+                using mineral nutrient solutions in an aqueous solvent.
+              </p>
+            </div>
+            <img
+              src="https://media.timeout.com/images/105712032/630/472/image.jpg"
+              alt=""
+            />
+            <div class="caption">
+              <h3>Seed and Bean Chocolate (Pennsylvania)</h3>
+              <p>
+                Great chocolate needs great cocoa beans. Seed and Bean is active
+                in the Cocoa Horizons Foundation that thrives in Côte d’Ivoire,
+                Ghana and Tanzania; also, it focuses on two key pillars to
+                address the challenges and achieve real progress: productivity
+                and community.
+              </p>
+            </div>
+            <img
+              src="https://perfectdailygrind.com/wp-content/uploads/2020/04/cacao-beans-1-e1586654896672.jpg"
+              alt="chocolate"
+              id="chocolate"
+              title="S and B Chocolate"
+            />
+            <div class="caption">
+              <h3>Sharondoah Beekeepers (Vermont)</h3>
+              <p>
+                A family built upon the health of bees. Specifically, they have
+                instituted the following: "To provide additional food sources
+                for bees before and after almond bloom, we are planting flower
+                pastures near or within almond orchards. Not only do those
+                blooming plants support honey bees, they provide food sources
+                for native bees as well."
+              </p>
+            </div>
+            <img
+              src="https://www.nhhomemagazine.com/content/uploads/2019/12/DSC_8946.jpg"
+              alt="bees"
+              id="bees"
+              title="sharandoah"
+            />
+            <div class="caption">
+              <h3>Tonial Orchards (Massachusetts)</h3>
+              <p>
+                They are at the forefront of assuring their apple cultivation is
+                done in the most sustainable manner as possible. In fact, apple
+                cultivation faces a number of challenges. Increasing global
+                competition has put the focus on lowering costs whilst further
+                improving sensory quality and shelf-life. There is a need to
+                reduce inputs such as water, fertiliser and labour, both to save
+                costs and reduce environmentally-damaging emissions and
+                pollution. T here is a continual battle with fungal, viral and
+                bacterial diseases as well as insect pests. In the long term
+                there is a need for new varieties able to withstand disease or
+                more extreme conditions associated with climate change: all of
+                this they are committed to being the best in class.
+              </p>
+            </div>
+            <img
+              src="https://media.timeout.com/images/105684643/1024/576/image.jpg"
+              alt="apple"
+              id="apple"
+              title="Tonial Orchids"
+            />
+          </div>
+        </main>
+      </div>
+    </div>
+    <!--Begin footer-->
+    <footer>
+      <div class="footerLinks">
+        <ul>
+          <li><a href="legal-privacy.html">Privacy Policy</a></li>
+          <li><a href="legal-privacy.html">Legal</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
